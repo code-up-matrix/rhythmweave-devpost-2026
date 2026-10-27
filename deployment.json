@@ -1,0 +1,27 @@
+{
+  "projectId": "prj_jG1CcZmsQr5eVHIX4w8704rZxAly",
+  "teamId": "team_64IDAvx3sgtTRCQpQavfF3cG",
+  "deploymentId": "dpl_2qA1nEaAFHTy9Nu8rPFwa997UWgm",
+  "deploymentCommit": "675b7c79a0dbafa8806e36ced143c54c565bc41d",
+  "url": "https://rhythmweave-devpost-2026.vercel.app",
+  "target": "production",
+  "hostingReady": true,
+  "productionReady": false,
+  "databaseProvisioned": false,
+  "liveIntegrationVerified": false,
+  "submitted": false,
+  "health": {
+    "url": "https://rhythmweave-devpost-2026.vercel.app/api/health",
+    "status": 200,
+    "body": {
+      "application": "RhythmWeave",
+      "status": "configuration_required",
+      "missing": [
+        "DATABASE_URL"
+      ],
+      "version": "1.0.0"
+    },
+    "checkedAt": "2026-10-27T15:04:56.124Z"
+  },
+  "lastUpdated": "2026-10-27T15:11:06.895Z"
+}
