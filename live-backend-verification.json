@@ -1,0 +1,240 @@
+{
+  "checkedAt": "2026-10-27T17:17:09.643304+00:00",
+  "repository": "code-up-matrix/rhythmweave-devpost-2026",
+  "testedSourceCommit": "df252d8bc55b7f7226b913868c252b849adc80db",
+  "deploymentId": "dpl_3cuJHS2BAEkNc1rsRoEuSM77DsER",
+  "url": "https://rhythmweave-devpost-2026.vercel.app",
+  "database": {
+    "projectId": "dawn-pine-29171712",
+    "productionBranchId": "br-orange-salad-b9ljf0fe",
+    "database": "app",
+    "runtimeRole": "app_service",
+    "migrated": true,
+    "region": "aws-eu-central-1",
+    "vercelConfigured": true,
+    "permissions": {
+      "rolname": "app_service",
+      "rolsuper": false,
+      "rolcreatedb": false,
+      "rolcreaterole": false,
+      "rolreplication": false,
+      "rolbypassrls": false,
+      "memberships": "{}",
+      "can_create_schema_objects": false,
+      "can_manage_records": true,
+      "tables": "8"
+    }
+  },
+  "verification": {
+    "application": "rhythmweave",
+    "url": "https://rhythmweave-devpost-2026.vercel.app",
+    "checkedAt": "2026-10-27T17:17:09.643304+00:00",
+    "checks": [
+      {
+        "check": "health endpoint",
+        "passed": true,
+        "evidence": {
+          "status": 200,
+          "expected": 200
+        }
+      },
+      {
+        "check": "database configured",
+        "passed": true
+      },
+      {
+        "check": "anonymous history denied",
+        "passed": true,
+        "evidence": {
+          "status": 401,
+          "expected": 401
+        }
+      },
+      {
+        "check": "foreign origin denied",
+        "passed": true,
+        "evidence": {
+          "status": 403,
+          "expected": 403
+        }
+      },
+      {
+        "check": "invalid access code denied",
+        "passed": true,
+        "evidence": {
+          "status": 401,
+          "expected": 401
+        }
+      },
+      {
+        "check": "judge login",
+        "passed": true,
+        "evidence": {
+          "status": 200,
+          "expected": 200
+        }
+      },
+      {
+        "check": "secure session cookie",
+        "passed": true
+      },
+      {
+        "check": "authenticated database read",
+        "passed": true,
+        "evidence": {
+          "status": 200,
+          "expected": 200
+        }
+      },
+      {
+        "check": "new judge has isolated empty history",
+        "passed": true
+      },
+      {
+        "check": "unauthorized cleanup denied",
+        "passed": true,
+        "evidence": {
+          "status": 401,
+          "expected": 401
+        }
+      },
+      {
+        "check": "authorized expiry cleanup",
+        "passed": true,
+        "evidence": {
+          "status": 200,
+          "expected": 200
+        }
+      },
+      {
+        "check": "expired fixtures removed",
+        "passed": true,
+        "evidence": {
+          "expired_runs": "1",
+          "old_limits": "1",
+          "old_receipts": "1"
+        }
+      },
+      {
+        "check": "judge login",
+        "passed": true,
+        "evidence": {
+          "status": 200,
+          "expected": 200
+        }
+      },
+      {
+        "check": "secure session cookie",
+        "passed": true
+      },
+      {
+        "check": "save generated work",
+        "passed": true,
+        "evidence": {
+          "status": 200,
+          "expected": 200
+        }
+      },
+      {
+        "check": "generated artwork matches recipe",
+        "passed": true,
+        "evidence": {
+          "description": "9 pulses distributed over 25 steps in 8 rings, rotated by 1 steps. Palette: moss.",
+          "svgSha256": "5840970352b5e1c5192a3a11fbeebb2a56aa0908f9fe8130190e541065667ab9"
+        }
+      },
+      {
+        "check": "read saved work",
+        "passed": true,
+        "evidence": {
+          "status": 200,
+          "expected": 200
+        }
+      },
+      {
+        "check": "saved record persists",
+        "passed": true
+      },
+      {
+        "check": "other judge history",
+        "passed": true,
+        "evidence": {
+          "status": 200,
+          "expected": 200
+        }
+      },
+      {
+        "check": "cross-user record hidden",
+        "passed": true
+      },
+      {
+        "check": "cross-user deletion is harmless",
+        "passed": true,
+        "evidence": {
+          "status": 200,
+          "expected": 200
+        }
+      },
+      {
+        "check": "owner record survives foreign deletion",
+        "passed": true,
+        "evidence": {
+          "status": 200,
+          "expected": 200
+        }
+      },
+      {
+        "check": "foreign deletion did not remove record",
+        "passed": true
+      },
+      {
+        "check": "owner removes own test record",
+        "passed": true,
+        "evidence": {
+          "status": 200,
+          "expected": 200
+        }
+      },
+      {
+        "check": "confirm own deletion",
+        "passed": true,
+        "evidence": {
+          "status": 200,
+          "expected": 200
+        }
+      },
+      {
+        "check": "own test record removed",
+        "passed": true
+      },
+      {
+        "check": "workspace logout",
+        "passed": true,
+        "evidence": {
+          "status": 200,
+          "expected": 200
+        }
+      },
+      {
+        "check": "logged-out history denied",
+        "passed": true,
+        "evidence": {
+          "status": 401,
+          "expected": 401
+        }
+      }
+    ],
+    "sponsorIntegrationVerified": false,
+    "syntheticDataOnly": true,
+    "health": {
+      "application": "RhythmWeave",
+      "status": "configured_not_live_verified",
+      "missing": [],
+      "version": "1.0.0"
+    },
+    "productFlowVerified": true,
+    "passed": true
+  },
+  "productionReady": false,
+  "submitted": false
+}
