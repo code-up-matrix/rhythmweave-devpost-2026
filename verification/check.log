@@ -1,0 +1,60 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> rhythmweave-devpost-2026@1.0.0 check
+> npm run typecheck && npm test && npm run build
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> rhythmweave-devpost-2026@1.0.0 typecheck
+> tsc --noEmit -p tsconfig.json
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> rhythmweave-devpost-2026@1.0.0 test
+> vitest run
+
+
+ RUN  v5.0.5 /tmp/devpost-event-repositories/rhythmweave
+
+
+ Test Files  3 passed (3)
+      Tests  6 passed (6)
+   Start at  10:58:56
+   Duration  2.11s (tests 78%, import 11%, transform 10%, worker 1%)
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> rhythmweave-devpost-2026@1.0.0 build
+> next build --webpack
+
+▲ Next.js 16.3.8 (webpack)
+✓ Running next.config.ts took 26ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 6.1s
+  Running TypeScript ...
+  Finished TypeScript in 3.0s ...
+  Collecting page data using 8 workers ...
+  Generating static pages using 8 workers (0/10) ...
+  Generating static pages using 8 workers (2/10) 
+  Generating static pages using 8 workers (4/10) 
+  Generating static pages using 8 workers (7/10) 
+✓ Generating static pages using 8 workers (10/10) in 237ms
+  Finalizing page optimization ...
+  Collecting build traces ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /access
+├ ƒ /api/health
+├ ƒ /api/internal/cleanup
+├ ƒ /api/lab/runs
+├ ƒ /api/rhythmweave
+├ ƒ /api/session
+└ ○ /history
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
